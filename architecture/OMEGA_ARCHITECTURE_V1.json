@@ -1,0 +1,61 @@
+{
+  "schema": "OMEGA_ARCHITECTURE_V1",
+  "farm_id": 149,
+  "name": "OMEGA",
+  "status": "SCAFFOLDED_NOT_TRAINED",
+  "domain": "native-proof-falsification",
+  "role": "proof-audit-counteraudit-falsification",
+  "mission": "Perform formal closure, falsification, counterexample search and epistemic status control without promoting unproved claims.",
+  "shared_base_family": "ELYSION_ELYSIUM_SHARED_BASE",
+  "runtime_changed": false,
+  "layers": [
+    {
+      "id": "L0",
+      "name": "BASE_MODEL",
+      "rule": "cold role benchmark"
+    },
+    {
+      "id": "L1",
+      "name": "OMEGA_CORE",
+      "rule": "formal proof/falsification specialization"
+    },
+    {
+      "id": "L2",
+      "name": "ADAPTERS",
+      "rule": "reversible adapters first"
+    },
+    {
+      "id": "L3",
+      "name": "MEMORY_INTERFACE",
+      "rule": "Memory Omega provenance and M6 isolation"
+    },
+    {
+      "id": "L4",
+      "name": "PI_SEARCH_INTERFACE",
+      "rule": "adversarial search directions; PI is not oracle"
+    },
+    {
+      "id": "L5",
+      "name": "TOOLS_AND_FARMS",
+      "rule": "symbolic/numeric receipts only"
+    },
+    {
+      "id": "L6",
+      "name": "CEREBRON_ORCHESTRATION",
+      "rule": "minimal coalition"
+    },
+    {
+      "id": "L7",
+      "name": "AFAH_REDTEAM",
+      "rule": "promotion requires audit"
+    }
+  ],
+  "rules": [
+    "REALITY>COHERENCE",
+    "EVIDENCE>CONFIDENCE",
+    "CLAIM<=EVIDENCE",
+    "COMPUTATION!=PROOF",
+    "M6_NEVER_IN_TRAIN",
+    "RUNTIME_FREEZE"
+  ]
+}
