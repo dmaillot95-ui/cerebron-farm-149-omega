@@ -1,0 +1,22 @@
+{
+  "schema": "OMEGA_D2_EXACT_RUNTIME_PAIR_AUDIT_V1",
+  "run_id": 36139940897,
+  "status": "PASS",
+  "pair_count": 2,
+  "models": [
+    {
+      "model_id": "HuggingFaceTB/SmolLM3-3B",
+      "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+      "receipt_sha256": "79c27790523644290c6a6844777da28e48064b27cff14a3bcc4751c56a4b50df"
+    },
+    {
+      "model_id": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "receipt_sha256": "bfd8b7002c9d8210f5381df179815b3f43332572bf0adc8c9c9e06325e4cf34a"
+    }
+  ],
+  "independent_evidence_count": 0,
+  "two_models_not_two_independent_proofs": true,
+  "claim_ceiling": "TWO_EXACT_REVISION_RUNTIME_RECEIPTS_PASS_NO_DUAL_CORE_GAIN_CLAIM",
+  "audit_sha256": "b715f26efe94bb50d46ecd1340a315cc01a9c769ee1c181115f62d4b45d077c9"
+}
